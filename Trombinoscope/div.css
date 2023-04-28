@@ -1,0 +1,87 @@
+div img {
+
+   margin: 2rem;
+   padding: .5rem;
+   height: 15rem;
+   width: 15rem;
+   border-radius: 26px;
+   cursor: pointer;
+   max-width: 100%;
+   object-fit: cover;
+   object-position: center;
+
+}
+
+.JFF {
+   text-align: center;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+@keyframes slideDown {
+   0% {
+      transform: translateY(100%);
+      opacity: 0;
+   }
+
+   100% {
+      transform: translateY(0);
+      opacity: 1;
+   }
+}
+
+.JF {
+   animation-name: slideDown;
+   animation-duration: 1s;
+   animation-timing-function: ease-in-out;
+   display: flex;
+
+}
+
+.galerie {
+   text-align: center;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   max-width: 1400px;
+   margin: 0 auto;
+
+}
+
+
+@media screen and (min-width: 975px) {
+   .galerie {
+      justify-content: space-between;
+   }
+}
+
+.galerie img {
+   opacity: 0;
+   margin: 2rem;
+   padding: .5rem;
+   height: 15rem;
+   width: 15rem;
+   max-width: 100%;
+   border-radius: 26px;
+   object-fit: cover;
+   object-position: center;
+
+
+}
+
+.fade-in {
+   animation: fadeIn .6s ease-in forwards;
+}
+
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+      transform: translateY(20px);
+   }
+
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}

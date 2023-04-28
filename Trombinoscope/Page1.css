@@ -1,0 +1,181 @@
+:root {
+    --primary-color: #F74187;
+    --secondary-color: #2B2929;
+    --tertiary-color: #C2C2C2;
+    --margin-top: 3rem;
+}
+
+
+/* image principale*/
+.hero-home {
+    position: relative;
+}
+
+.hero-home img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+
+
+/* Titres */
+h2 {
+    text-align: center;
+    margin: auto;
+    margin-top: var(--margin-top);
+    border-radius: 0.938rem;
+    background: var(--primary-color);
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    text-shadow: 0px 2px 2px black;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+
+.firsth2 {
+    display: flex;
+    width: 17rem;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.secondh2 {
+    display: flex;
+    width: 17rem;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.thirdh2 {
+    display: flex;
+    width: 17rem;
+    height: 45px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* Réseaux */
+
+a img {
+    margin: auto;
+    width: 35px;
+    height: 35px;
+}
+
+div {
+    display: flex;
+    justify-content: space-around;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    margin: 2rem;
+}
+
+.p1 {
+    padding-top: 2rem;
+
+}
+
+.p2 {
+    padding-top: 2rem;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.p3 {
+    padding-top: 1rem;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.page1rubriques {
+    width: 80%;
+    margin-left: 10%;
+    line-height: 3ch;
+}
+
+
+.bienvenue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vw;
+    text-align: center;
+    z-index: 999;
+    color: rgb(233, 233, 233);
+    /* Ajoute une transparence au texte */
+    text-shadow: 4px 4px 5px rgba(117, 102, 115, 0.5);
+    /* Ajoute une ombre au texte */
+    pointer-events: none;
+}
+
+.bienvenue span {
+    display: inline-block;
+    opacity: 0;
+    animation: fadein 2s forwards;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(var(--start-position, -100%));
+    }
+
+    20% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+/* responsive tablette & écran */
+
+@media screen and (min-width: 1024px) {
+
+    main>img {
+        width: 100%;
+
+    }
+
+    main>img {
+        width: 100%
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    main>img {
+        width: 100%;
+        object-fit: cover;
+    }
+}

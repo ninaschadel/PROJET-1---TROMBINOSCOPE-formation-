@@ -1,0 +1,382 @@
+.JF_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+
+}
+
+.JF_container.active {
+    display: flex;
+}
+
+.JF_popup {
+    position: fixed;
+    height: 35rem;
+    width: 70rem;
+    background-color: #F74187;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    animation: animationA 1s linear .2s backwards;
+    overflow-y: auto;
+    z-index: 10000;
+    /* ajout de la propriété overflow-y pour permettre le défilement en mode responsive */
+    transition: all 0.5s ease;
+}
+
+.JFDansPopup {
+    max-height: 30rem;
+    max-width: 30rem;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+
+
+.titreJF {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.petitTitreJF {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.JF_description {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-sizing: border-box;
+}
+
+@keyframes animationA {
+    0% {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+
+    /* adjust styles for large screens */
+    .JF_popup {
+        height: auto;
+        max-width: none;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+    }
+
+    .JFDansPopup {
+        min-height: 30rem;
+        min-width: 30rem;
+    }
+
+    .JF_description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+
+    /* adjust styles for medium screens */
+    .JF_popup {
+
+        width: 60%;
+        max-width: none;
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        align-items: center;
+        height: auto;
+    }
+
+    .JFDansPopup {
+
+        max-width: 30rem;
+        position: relative;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .JF_description {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .JF_popup {
+        width: 80%;
+        height: 80%;
+        padding: 1rem;
+        grid-template-columns: 1fr;
+        overflow-y: auto;
+    }
+
+    .JFDansPopup {
+        max-width: 100%;
+        max-height: none;
+        position: relative;
+    }
+
+    .titreJF {
+        font-size: 3rem;
+        margin: 0.5rem 0;
+    }
+
+    .petitTitreJF {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .JF_description {
+        gap: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .JF_popup {
+        width: 95%;
+        height: auto;
+        padding: 1rem;
+        grid-template-columns: 1fr;
+        overflow-y: auto;
+    }
+
+    .titreJF {
+        font-size: 2.5rem;
+        margin: 0.5rem 0;
+    }
+
+    .petitTitreJF {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .JF_description {
+        gap: 0.5rem;
+        padding-left: 1rem;
+    }
+}
+
+
+
+.Wilder_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.Wilder_container.active {
+    display: flex;
+}
+
+.Wilder_popup {
+    position: fixed;
+    height: 35rem;
+    width: 70rem;
+    background-color: #F74187;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    animation: animationA 1s linear .2s backwards;
+    overflow-y: auto;
+    z-index: 10000;
+    /* ajout de la propriété overflow-y pour permettre le défilement en mode responsive */
+    transition: all 0.5s ease;
+}
+
+.WilderDansPopup {
+    max-height: 30rem;
+    max-width: 30rem;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.titreWilder {
+    font-size: 200%;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.petitTitreWilder {
+    font-size: 2rem;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.Wilder_description {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+@keyframes animationA {
+    0% {
+        opacity: 0;
+        transform: translateY(-2rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+
+
+
+@media only screen and (min-width: 1170px) {
+
+    /* adjust styles for large screens */
+    .Wilder_popup {
+        height: auto;
+        max-width: none;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+    }
+
+    .WilderDansPopup {
+        min-height: 30rem;
+        min-width: 30rem;
+        position: relative;
+    }
+
+    .Wilder_description {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .titreWilder {
+        font-size: 350%;
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+
+    /* adjust styles for medium screens */
+    .Wilder_popup {
+        height: auto;
+        width: 60%;
+        max-width: none;
+        grid-template-columns: 1fr;
+        padding: 2rem;
+
+    }
+
+    .WilderDansPopup {
+        max-height: auto;
+        max-width: 30rem;
+        position: relative;
+    }
+
+    .Wilder_description {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+}
+
+
+@media screen and (max-width: 700px) {
+    .Wilder_popup {
+        width: 80%;
+        height: 80%;
+        padding: 0;
+        grid-template-columns: 1fr;
+        overflow-y: auto;
+    }
+
+    .WilderDansPopup {
+        max-width: 100%;
+        max-height: none;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .Wilder_popup {
+        width: 100%;
+        height: 80%;
+        padding: 1rem;
+        grid-template-columns: 1fr;
+        overflow-y: auto;
+    }
+
+    .titreWilder {
+        font-size: 2.5rem;
+        margin: 0.5rem 0;
+    }
+
+    .petitTitreWilder {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .Wilder_description {
+        gap: 0.5rem;
+        padding-left: 1rem;
+    }
+}
+
+/*Bouton gauche droite popup*/
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    opacity: 0.5;
+    z-index: 10001;
+    margin: 1rem;
+}
+
+.nav-button:hover {
+    opacity: 1;
+}
+
+.prev-button {
+    left: -1rem;
+}
+
+.next-button {
+    right: -1rem;
+}

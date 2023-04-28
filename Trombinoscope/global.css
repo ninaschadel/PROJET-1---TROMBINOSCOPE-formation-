@@ -1,0 +1,11 @@
+body {
+    padding-top: 72px;
+    margin: 0;
+}
+
+@media screen and (width > 769px) {
+    body {
+        padding-top: 53px;
+    }
+
+}

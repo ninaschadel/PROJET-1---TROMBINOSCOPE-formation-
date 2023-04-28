@@ -1,0 +1,240 @@
+body {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+
+    /* Pour s'assurer que le contenu occupe au moins la hauteur de la fenêtre */
+}
+
+form {
+    background: #FFFFFF;
+    width: 350px;
+    text-align: center;
+    margin: 30px auto;
+    box-shadow: 0px 0px 12px #999999;
+    padding-bottom: 40px;
+    border-radius: 10px;
+
+
+}
+
+h1 {
+    height: 55px;
+    width: 350px;
+    font-size: 20px;
+    background-color: #F74187;
+    color: white;
+    padding: 15px 0 0 0;
+    border-radius: 10px 10px 0 0;
+}
+
+input {
+    margin: 20px 0px;
+    width: 300px;
+    border: none;
+    padding: 5px 0;
+    border-bottom: solid 1px #F74187;
+    color: #353535;
+    padding: .5rem;
+}
+
+button {
+    border: none;
+    background-color: #F74187;
+    color: white;
+    height: 40px;
+    width: 150px;
+    font-size: 15px;
+    box-shadow: 2px 3px 5px #5e5c5d7d;
+    border-radius: 10px;
+}
+
+button:active {
+    background-color: #e78f8e;
+}
+
+.vibrate {
+    animation: vibrate 0.3s linear;
+    animation-iteration-count: 3;
+}
+
+@keyframes vibrate {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+select, textarea {
+    margin: 20px 0px;
+    width: 300px;
+    border: none;
+    padding: 5px 0;
+    border-bottom: solid 1px #F74187;
+    color: #353535;
+    background-color: transparent;
+    padding: .5rem;
+}
+
+textarea.dis-en-plus {
+    resize: none;
+    overflow: hidden;
+    padding: .5rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.reseaux {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+div img {
+    margin: auto;
+    width: 35px;
+    height: 35px;
+
+}
+
+div {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.Nos {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+
+    main>img {
+        width: 100%
+    }
+
+    main>img {
+        width: 100%
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    main>img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    form {
+        width: 65%;
+    }
+
+    h1 {
+        width: 100%;
+        font-size: x-large;
+    }
+
+    input {
+        width: 50%;
+    }
+
+    textarea.dis-en-plus {
+        width: 50%;
+        height: 8rem;
+
+    }
+
+    select, textarea {
+        width: 50%;
+    }
+
+    button {
+        font-size: large;
+    }
+}
+
+
+#contactForm button:hover {
+    background-color: #e78f8e;
+}
+
+#contactForm button {
+    display: block;
+    margin: 0 auto;
+}
+
+.dis-en-plus {
+    resize: vertical;
+    height: 100px;
+    max-height: 200px;
+}
+
+.phraseform {
+    font-weight: bold;
+
+}
+
+/* Style de la popup */
+.popup {
+    position: fixed;
+    font-family: 'Raleway', sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 70%;
+    line-height: 3ch;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+    text-align: center;
+    /* La popup est cachée par défaut */
+}
+
+@media only screen and (min-width: 700px) {
+
+    .popup {
+        width: 50%;
+    }
+
+}
+
+/* Style de l'overlay (fond sombre derrière la popup) */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    display: none;
+    /* L'overlay est caché par défaut */
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- POLICE LINK VARELA (titre) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <!-- POLICE LINK RALEWAY (text) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="stylejoin.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="button.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul>
+          <li>
+            <a class="nav-link accueil" href="Page1.html">A propos de nous</a>
+          </li>
+          <li><a class="nav-link a-propos" href="php.php">L'équipe PHP</a></li>
+          <li>
+            <a class="nav-link contact" href="Rejoins-nous.html"
+              >Nous contacter</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <form id="contactForm">
+      <h1>Contactez-nous :</h1>
+      <br />
+      <p class="phraseform">
+        Si vous souhaitez rejoindre la Wild Code School, nous vous invitons à
+        remplir ce formulaire.
+      </p>
+      <input placeholder="Nom" type="text" required />
+      <input placeholder="Prénom" type="text" required />
+      <select name="age" id="age">
+        <option value="" disabled selected>Age</option>
+        <!-- Ajouter les options d'âge ici -->
+        <option value="18">-18 ans</option>
+        <option value="19">18 - 25 ans</option>
+        <option value="19">26 - 35 ans</option>
+        <option value="19">36 - 45 ans</option>
+        <option value="19">46 - 55 ans</option>
+        <option value="19">56 ans et +</option>
+      </select>
+      <input placeholder="E-mail" type="email" required />
+      <input placeholder="Téléphone" type="tel" required />
+      <textarea
+        placeholder="Ecrivez votre question ici"
+        rows="5"
+        class="dis-en-plus"
+        required
+      ></textarea>
+      <div class="button-container">
+        <button>Envoyer</button>
+      </div>
+    </form>
+    <!-- Popup de confirmation -->
+    <div class="overlay"></div>
+    <div class="popup">
+      <p>
+        Merci ! Votre formulaire a été soumis avec succès. Nous avons bien reçu
+        votre demande et nous vous contacterons dans les plus brefs délais.
+      </p>
+      <button id="fermer-popup">OK</button>
+    </div>
+    <br /><br /><br />
+    <p class="Nos">Nos réseaux favoris !</p>
+    <div class="reseaux">
+      <a href="https://www.facebook.com/WildCodeSchool/" target="_blank">
+        <img src="./imgpage1/Facebook.png" alt="Facebook"
+      /></a>
+      <a
+        href="https://www.instagram.com/wildcodeschoolofficial/?hl=fr"
+        target="_blank"
+      >
+        <img src="./imgpage1/Instagram.png" alt="Instagram"
+      /></a>
+      <a
+        href="https://twitter.com/WildCodeSchool?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+        target="_blank"
+      >
+        <img src="./imgpage1/Twitter.png" alt="Twitter"
+      /></a>
+      <a href="https://github.com/WildCodeSchool" target="_blank">
+        <img src="./imgpage1/Github.png" alt="Github"
+      /></a>
+      <a
+        href="https://www.linkedin.com/school/wild-code-school/?originalSubdomain=fr"
+        target="_blank"
+      >
+        <img src="./imgpage1/Linkedin.png" alt="Linkedin"
+      /></a>
+      <a
+        href="https://www.youtube.com/channel/UCi99G_0QPx5sYsK8zdvQzfw"
+        target="_blank"
+      >
+        <img src="./imgpage1/Youtube.png" alt="Youtube"
+      /></a>
+    </div>
+    <div class="button">
+      <a href="#" class="btn btn-primary">Haut ↑</a>
+    </div>
+    <footer>Copyright © 2023 TEAMPHP, Inc.</footer>
+
+    <script src="script.js"></script>
+    <script src="envoyer.js"></script>
+  </body>
+</html>
